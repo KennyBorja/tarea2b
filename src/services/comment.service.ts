@@ -23,12 +23,7 @@ export class CommentService {
     }
   }
 
-  static getComments = async (idEntry:number):Promise<CommentResponse []> => {
-    try {
-      const { data } = await axiosApi.get<CommentResponse []>(`http://localhost:8080/comment/getComments/${idEntry}`)
-      return data
-    }catch (e) {
-      throw new Error("NO se pudo traer los commentarios")
-    }
-  }
+  //quitando una funcion
+
+  
 }
